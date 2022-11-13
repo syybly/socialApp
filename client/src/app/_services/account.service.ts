@@ -39,7 +39,7 @@ export class AccountService {
   }
 
   logout() {
-    return localStorage.removeItem('user');
+     localStorage.removeItem('user');
     this.currentUserSource.next(null);
   }
 }
